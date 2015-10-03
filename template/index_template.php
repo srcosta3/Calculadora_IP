@@ -53,7 +53,7 @@
     </div>
     <div class="row">
       <div class="container">
-	<center><a href='https://github.com/lfamlfam/Calculadora_IP'>Link para o c&oacute;digo fonte</a></center>
+	<center><a href='https://github.com/lfamlfam/Calculadora_IP' target='_blank'>Link para o c&oacute;digo fonte</a></center>
       </div>
     </div>
   </body>
