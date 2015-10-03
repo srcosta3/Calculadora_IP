@@ -100,7 +100,7 @@ class CalculadoraIP {
 				$this->mascara_minima = 12;
 			}elseif($this->octetos[0] == 10){//classe A
 				$this->classe = 'A';
-				$this->mascara_minima = 10;
+				$this->mascara_minima = 8;
 			}elseif($this->octetos[0] == 169 && $this->octetos[1] == 254){//APIPA
 				$this->classe = 'APIPA';
 				$this->mascara_minima = 16;
