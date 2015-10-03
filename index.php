@@ -7,6 +7,10 @@ Obs.: O aluno que ajudar a melhorar o código ganha 2 pontos na média
 */
 require('classe/classe_calculadora_ip.php');
 
+$_POST['ip'] = empty($_POST['ip']) ? null : $_POST['ip'];
+$_POST['mascara'] = empty($_POST['mascara']) ? null : $_POST['mascara'];
+$_POST['calcular'] = empty($_POST['calcular']) ? null : $_POST['calcular'];
+
 $objCalculadoraIP = new CalculadoraIP;
 
 if(!$_POST['calcular']){
