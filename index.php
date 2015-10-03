@@ -34,6 +34,8 @@ if(!$_POST['calcular']){
 
 	$resultado .= 'GTWs    : '.$objCalculadoraIP->gateway1.' ou '.$objCalculadoraIP->gateway2."\n\n";
 
+        $resultado .= 'Classe  : '.$objCalculadoraIP->classe."\n";
+        $resultado .= 'CIDR    : '.$objCalculadoraIP->cidr."\n";
 	$resultado .= 'IP      : '.$objCalculadoraIP->IPBinarioParaDecimal($objCalculadoraIP->ip_binario)."\n";
 	$resultado .= 'Mask    : '.$objCalculadoraIP->IPBinarioParaDecimal($objCalculadoraIP->mascara_binaria)."\n";
 	$resultado .= 'IP Rede : '.$objCalculadoraIP->IPBinarioParaDecimal($objCalculadoraIP->endereco_de_rede)."\n";
