@@ -234,7 +234,12 @@ class CalculadoraIP {
 	public function MascaraBinariaParaDecimal($mascara_binaria){
 		return $this->IPBinarioParaDecimal($mascara_binaria);
 	}
-
+	public function InserirPontosEmIps($binario){
+		return 	substr($binario,0,8).'.'.
+			substr($binario,8,8).'.'.
+			substr($binario,16,8).'.'.
+			substr($binario,24,8);
+	}
 	public function __destruct(){
 		echo '<center>Calcularora IP (IPv4) para LAN (IPs privados) - Prof. Me. Luiz Fernando Albertin Bono Milan - 2015</center>';
 	}
