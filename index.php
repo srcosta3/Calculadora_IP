@@ -24,15 +24,15 @@ if(!$_POST['calcular']){
 	$resultado = '';
 
 	$resultado .= "\n\n";
-	$resultado .= 'Mask    : '.$objCalculadoraIP->mascara_binaria."\n";
-	$resultado .= 'IP      : '.$objCalculadoraIP->ip_binario."\n";
-	$resultado .= 'IP Rede : '.$objCalculadoraIP->endereco_de_rede."\n\n";
+	$resultado .= 'Mask    : '.$objCalculadoraIP->InserirPontosEmIps($objCalculadoraIP->mascara_binaria)."\n";
+	$resultado .= 'IP      : '.$objCalculadoraIP->InserirPontosEmIps($objCalculadoraIP->ip_binario)."\n";
+	$resultado .= 'IP Rede : '.$objCalculadoraIP->InserirPontosEmIps($objCalculadoraIP->endereco_de_rede)."\n\n";
 
-	$resultado .= 'Mask Inv: '.$objCalculadoraIP->mascara_inversa."\n";
-	$resultado .= 'IP      : '.$objCalculadoraIP->ip_binario."\n";
-	$resultado .= 'IP Broad: '.$objCalculadoraIP->endereco_de_broadcast."\n\n";
+	$resultado .= 'Mask Inv: '.$objCalculadoraIP->InserirPontosEmIps($objCalculadoraIP->mascara_inversa)."\n";
+	$resultado .= 'IP      : '.$objCalculadoraIP->InserirPontosEmIps($objCalculadoraIP->ip_binario)."\n";
+	$resultado .= 'IP Broad: '.$objCalculadoraIP->InserirPontosEmIps($objCalculadoraIP->endereco_de_broadcast)."\n\n";
 
-	$resultado .= 'GTWs    : '.$objCalculadoraIP->gateway1.' ou '.$objCalculadoraIP->gateway2."\n\n";
+	$resultado .= 'GTWs    : '.$objCalculadoraIP->InserirPontosEmIps($objCalculadoraIP->gateway1).' ou '.$objCalculadoraIP->InserirPontosEmIps($objCalculadoraIP->gateway2)."\n\n";
 
         $resultado .= 'Classe  : '.$objCalculadoraIP->classe."\n";
         $resultado .= 'M. Min. : '.$objCalculadoraIP->mascara_minima."\n";
